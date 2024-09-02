@@ -16,7 +16,7 @@ const Header = () => {
     const { user, isSignedIn } = useUser();
 
     useEffect(() => {
-        // console.log(path)
+        console.log(path)
     })
 
     return (
