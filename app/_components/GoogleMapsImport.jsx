@@ -15,7 +15,7 @@ function GoogleMapsImport({selectedAdress, setCoordinates}) {
       isClearable:true,
       className:'w-full',
       onChange:(place) => {
-        selectedAdress(place.label);
+        selectedAdress(place);
         geocodeByAddress(place.label)
         .then(results => getLatLng(results[0]))
         .then(({ lat, lng }) => {
